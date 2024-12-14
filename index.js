@@ -1,3 +1,12 @@
+function handleClick() {
+    alert("Hooray!");
+    let heading = document.querySelector("h1");
+    heading.classList.add("hidden") // Adds a hidden class in h1 once button is clicked
+}
+let buttonElement = document.querySelector("#button");
+buttonElement.addEventListener("click", handleClick);
+
+/*
 function showAnswer(response) {
     alert(response.data.answer);
 }
@@ -9,3 +18,4 @@ let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${
 
 console.log("Processing")
 axios.get(apiUrl).then(showAnswer);
+*/
